@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مؤسسة حازم للمقاولات العامة</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        direction: rtl;
+        background-color: #f5f5f5;
+        text-align: center;
+    }
+    header {
+        background-color: #004aad;
+        color: #fff;
+        padding: 20px 0;
+    }
+    nav {
+        background-color: #003580;
+        display: flex;
+        justify-content: center;
+    }
+    nav a {
+        color: #fff;
+        padding: 15px 20px;
+        text-decoration: none;
+        transition: all 0.3s;
+        position: relative;
+    }
+    nav a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 5px;
+        left: 0;
+        background: #fff;
+        transition: width 0.3s;
+    }
+    nav a:hover::after { width: 100%; }
+    nav a:hover { background-color: #002060; }
+    section { padding: 50px 20px; max-width: 1200px; margin: auto; }
+    h2 { color: #004aad; margin-bottom: 30px; }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        justify-items: center;
+    }
+    .service {
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+    .service img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    .service img:hover { transform: scale(1.05); }
+    .service-content { padding: 15px; }
+    .service-content h3 { margin: 10px 0; color: #004aad; }
+    .service-content p { margin: 0; font-size: 14px; color: #333; }
+    footer {
+        background-color: #004aad;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .contact-info { margin-top: 10px; font-size: 16px; }
+    .call-btn-inline {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 12px 25px;
+        background-color: #007BFF;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .call-btn-inline:hover { background-color: #0056b3; transform: scale(1.05); }
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 25px;
+        z-index: 1000;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #25D366;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+    }
+    .whatsapp-btn img { width: 28px; height: 28px; }
+    .whatsapp-btn:hover { transform: scale(1.1); }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>مؤسسة حازم للمقاولات العامة</h1>
+    <p>دهانات | ديكورات | ترميمات | بناء ملحق | جلسات حدائق | مضلات وسواتر | برجولات</p>
+</header>
+
+<nav>
+    <a href="#services">خدماتنا</a>
+    <a href="#about">عن المؤسسة</a>
+    <a href="#contact">تواصل معنا</a>
+</nav>
+
+<section id="about">
+    <h2>عن المؤسسة</h2>
+    <p>مؤسسة حازم للمقاولات العامة تقدم خدمات احترافية في مجالات الدهانات، الديكورات، الترميمات، بناء الملحقات، جلسات الحدائق، المظلات والسواتر، والبرجولات، بخبرة وجودة عالية في منطقة عسير (أبها، خميس مشيط، نجران).</p>
+</section>
+
+<section id="services">
+    <h2>خدماتنا</h2>
+    <div class="services">
+        <!-- دهانات -->
+        <div class="service">
+            <a href="https://wa.me/966556845766?text=مرحبًا%20مؤسسة%20حازم،%20أنا%20مهتم%20بالدهانات.%20تم%20تحويل%20هذه%20المحادثة%20من%20خلال%20موقعكم%20على%20الويب" target="_blank">
+                <img src="https://i.ibb.co/wZ8h6XY5/94ecdfb48180e54830dad316f23e9f4d.jpg" alt="دهانات">
+            </a>
+            <div class="service-content"><h3>دهانات</h3><p>دهانات داخلية وخارجية عالية الجودة بألوان ممتازة.</p></div>
+        </div>
+
+        <!-- ديكورات -->
+        <div class="service">
+            <a href="https://wa.me/966556845766?text=مرحبًا%20مؤسسة%20حازم،%20أنا%20مهتم%20بالديكورات.%20تم%20تحويل%20هذه%20المحادثة%20من%20خلال%20موقعكم%20على%20الويب" target="_blank">
+                <img src="https://i.ibb.co/BK73wKVd/1761933393940.jpg" alt="ديكورات">
+            </a>
+            <div class="service-content"><h3>ديكورات</h3><p>ديكورات عصرية تضيف لمسة فنية رائعة.</p></div>
+        </div>
+
+        <!-- ترميمات -->
+        <div class="service">
+            <a href="https://wa.me/966556845766?text=مرحبًا%20مؤسسة%20حازم،%20أنا%20مهتم%20بالترميمات.%20تم%20تحويل%20هذه%20المحادثة%20من%20خلال%20موقعكم%20على%20الويب" target="_blank">
+                <img src="https://i.ibb.co/1YLJmMWJ/IMG-20251031-WA0015.jpg" alt="ترميمات">
+            </a>
+            <div class="service-content"><h3>ترميمات</h3><p>ترميم وتجديد المباني باحترافية عالية.</p></div>
+        </div>
+
+        <!-- بناء ملحق -->
+        <div class="service">
+            <a href="https://wa.me/966556845766?text=مرحبًا%20مؤسسة%20حازم،%20أنا%20مهتم%20ببناء%20الملحق.%20تم%20تحويل%20هذه%20المحادثة%20من%20خلال%20موقعكم%20على%20الويب" target="_blank">
+                <img src="https://i.ibb.co/SXt2gzvC/image.jpg" alt="بناء ملحق">
+            </a>
+            <div class="service-content"><h3>بناء ملحق</h3><p>إنشاء ملحقات دقيقة التصميم وجودة ممتازة.</p></div>
+        </div>
+
+        <!-- جلسات حدائق -->
+        <div class="service">
+            <a href="https://wa.me/966556845766?text=مرحبًا%20مؤسسة%20حازم،%20أنا%20مهتم%20بجلسات%20الحدائق.%20تم%20تحويل%20هذه%20المحادثة%20من%20خلال%20موقعكم%20على%20الويب" target="_blank">
+                <img src="https://i.ibb.co/Vc8QR8gq/IMG-20251031-WA0017.jpg" alt="جلسات حدائق">
+            </a>
+            <div class="service-content"><h3>جلسات حدائق</h3><p>جلسات حدائق أنيقة ومريحة للهواء الطلق.</p></div>
+        </div>
+
+        <!-- مضلات وسواتر -->
+        <div class="service">
+            <a href="https://wa.me/966556845766?text=مرحبًا%20مؤسسة%20حازم،%20أنا%20مهتم%20بالمظلات%20والسواتر.%20تم%20تحويل%20هذه%20المحادثة%20من%20خلال%20موقعكم%20على%20الويب" target="_blank">
+                <img src="https://i.ibb.co/bgL9MBZB/images-2.jpg" alt="مضلات وسواتر">
+            </a>
+            <div class="service-content"><h3>مضلات وسواتر</h3><p>تركيب مضلات وسواتر متينة ضد العوامل الجوية.</p></div>
+        </div>
+
+        <!-- برجولات -->
+        <div class="service">
+            <a href="https://wa.me/966556845766?text=مرحبًا%20مؤسسة%20حازم،%20أنا%20مهتم%20بالبرجولات.%20تم%20تحويل%20هذه%20المحادثة%20من%20خلال%20موقعكم%20على%20الويب" target="_blank">
+                <img src="https://i.ibb.co/zWTtBzT9/image.jpg" alt="برجولات">
+            </a>
+            <div class="service-content"><h3>برجولات</h3><p>برجولات خشبية وحديدية بتصاميم عصرية.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>تواصل معنا</h2>
+    <p class="contact-info">العنوان: أبها - خميس مشيط - نجران، منطقة عسير</p>
+    <a href="tel:+966556845766" class="call-btn-inline">اتصل الآن: +966 55 684 5766</a>
+</section>
+
+<footer>
+    <p>
+        &copy; 2025 مؤسسة حازم للمقاولات العامة. جميع الحقوق محفوظة.<br>
+        تم تصميم الموقع بواسطة 
+        <a href="https://wa.me/967779313305?text=تم%20تحويل%20هذه%20المحادثة%20من%20خلال%20موقع%20مؤسسة%20حازم%20للمقاولات%20العامة" 
+           target="_blank" 
+           style="color:#fff; text-decoration:underline; font-weight:bold;">
+            Yemen bot ai
+        </a>
+    </p>
+</footer>
+
+<a href="https://wa.me/966556845766?text=مرحبًا%20مؤسسة%20حازم،%20أود%20الاستفسار%20عن%20خدماتكم%0Aتم%20تحويل%20هذه%20المحادثة%20من%20خلال%20موقعكم%20على%20الويب" class="whatsapp-btn" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+</body>
+</html>
